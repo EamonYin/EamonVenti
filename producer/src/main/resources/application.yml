@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: produce
+server:
+  port: 8082
+
+eurekaServer:
+  host: localhost
+  port: 8081
+  user: root
+  password: root
+
+eureka:
+  client:
+    #将此项目注册到Eureka服务
+    register-with-eureka: true
+    service-url:
+     defaultZone: http://${eurekaServer.user}:${eurekaServer.password}@${eurekaServer.host}:${eurekaServer.port}/eureka

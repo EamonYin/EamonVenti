@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: XiaoMing
+Build-Jdk: 1.8.0_251
+Implementation-Title: EamonVenti Maven Webapp
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.Eamon
+Main-Class: ${start-class}
+
