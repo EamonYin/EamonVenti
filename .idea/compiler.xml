@@ -9,12 +9,12 @@
         <module name="account" />
         <module name="storage" />
         <module name="order" />
-        <module name="SpringCloud_Shopping" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringCloud_Shopping" options="-parameters" />
       <module name="account" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="storage" options="-parameters" />
