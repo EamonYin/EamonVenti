@@ -1,0 +1,10 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: storage
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/eamon_shopping?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
+    username: root
+    password:
