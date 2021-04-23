@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("eamon.springcloud.order.mapper")
+@MapperScan("eamon.springcloud.order")
 public class OrderApplication {
 
     public static void main(String[] args) {

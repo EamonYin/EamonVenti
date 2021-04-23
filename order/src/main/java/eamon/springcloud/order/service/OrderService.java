@@ -12,5 +12,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2021-04-23
  */
 public interface OrderService extends IService<Order> {
-
+    /**
+     * 创建订单
+     */
+    Long create(Order order);
 }
