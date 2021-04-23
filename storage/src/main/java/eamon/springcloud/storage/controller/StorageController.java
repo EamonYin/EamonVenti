@@ -1,4 +1,4 @@
-package eamon.springcloud.account.controller;
+package eamon.springcloud.storage.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-04-23
  */
 @RestController
-@RequestMapping("/account")
-public class AccountController {
+@RequestMapping("/storage/storage")
+public class StorageController {
 
 }
 

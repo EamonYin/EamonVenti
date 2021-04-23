@@ -47,13 +47,11 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.3.0</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
-            <version>2.3</version>
         </dependency>
 
         <!--父模块中使用【</dependencyManagement>】包裹，所以此处使用lombok，要指出groupId、artifactId

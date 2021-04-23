@@ -1,4 +1,4 @@
-package eamon.springcloud;
+package eamon.springcloud.storage;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -27,9 +27,9 @@ public class CodeGenerator {
 
         // Step2：全局配置
         GlobalConfig gc = new GlobalConfig();
-        String projectPath = System.getProperty("user.dir");
+//        String projectPath = System.getProperty("user.dir");
         // 填写代码生成的目录(需要修改)
-        gc.setOutputDir("G:\\【做过的项目】\\SpringCloud_Shopping\\account" + "/src/main/java");
+        gc.setOutputDir("G:\\【做过的项目】\\SpringCloud_Shopping\\storage" + "/src/main/java");
         gc.setAuthor("Eamon");
         //生成后是否打开资源管理器
         gc.setOpen(false);
@@ -66,7 +66,7 @@ public class CodeGenerator {
         // 配置父包名（需要修改）
         pc.setParent("eamon.springcloud");
         // 配置模块名（需要修改）
-        pc.setModuleName("account");
+        pc.setModuleName("storage");
         // 配置 entity 包名
         pc.setEntity("entity");
         // 配置 mapper 包名
@@ -80,7 +80,7 @@ public class CodeGenerator {
         // Step5：策略配置（数据库表配置）
         StrategyConfig strategy = new StrategyConfig();
         // 指定表名（可以同时操作多个表，使用 , 隔开）（需要修改）
-        strategy.setInclude("account");
+        strategy.setInclude("storage");
         // 配置数据表与实体类名之间映射的策略
         strategy.setNaming(NamingStrategy.underline_to_camel);
         // 配置数据表的字段与实体类的属性名之间映射的策略
