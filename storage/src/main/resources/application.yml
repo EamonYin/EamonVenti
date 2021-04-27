@@ -8,3 +8,9 @@ spring:
     url: jdbc:mysql://localhost:3306/eamon_shopping?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
     username: root
     password:
+mybatis-plus:
+  global-config:
+    db-config:
+      insert-strategy: not_null
+      update-strategy: not_null
+      id-type: auto
