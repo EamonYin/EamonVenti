@@ -1,0 +1,10 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: nacos-provide
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.217.128:8848
+
