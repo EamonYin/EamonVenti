@@ -121,18 +121,21 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
-        <dependency>
+
+        <!--无用依赖-->
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-alibaba-dependencies</artifactId>
             <version>${nacos.version}</version>
             <type>pom</type>
             <scope>import</scope>
-        </dependency>
+        </dependency>-->
+
         <!--解决无法导入 @EnableDiscoveryClient 注解-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2021.1</version>
+            <version>${nacos.version}</version>
         </dependency>
     </dependencies>
 
@@ -140,13 +143,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+<!--        <spring-cloud.version>Greenwich.SR5</spring-cloud.version>-->
         <mybatis.plus.version>3.3.0</mybatis.plus.version>
         <mysql.version>5.1.47</mysql.version>
         <alibaba.seata.version>2.1.0.RELEASE</alibaba.seata.version>
         <seata.version>1.1.0</seata.version>
-        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
-        <nacos.version>0.2.2.RELEASE</nacos.version>
+        <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
+<!--        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>-->
+        <nacos.version>2.1.2.RELEASE</nacos.version>
+<!--        <nacos.version>0.2.1.RELEASE</nacos.version>-->
     </properties>
 
     <build>
