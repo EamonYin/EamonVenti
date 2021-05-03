@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 
 
-@FeignClient("account")
+@FeignClient(name = "account")
 public interface AccountClient {
 
     @PutMapping("/account/{userId}/{money}")
