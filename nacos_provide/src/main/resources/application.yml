@@ -7,4 +7,6 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.217.128:8848
-
+    alibaba:
+      seata:
+        tx-service-group: nacos_provide-service-fescar-service-group

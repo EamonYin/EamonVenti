@@ -12,6 +12,10 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.217.128:8848
+    # seata 服务分组，要与服务端nacos-config.txt中service.vgroup_mapping的后缀对应
+    alibaba:
+      seata:
+        tx-service-group: account-service-fescar-service-group
 mybatis-plus:
   global-config:
     db-config:
