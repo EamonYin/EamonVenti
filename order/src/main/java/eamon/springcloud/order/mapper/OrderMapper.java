@@ -17,6 +17,6 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface OrderMapper extends BaseMapper<Order> {
-    @Insert("INSERT INTO `order` (`id`,`user_id`,`commodity_code`,`count`,`money`) VALUES(NULL, #{userId}, #{commodityode}, #{count}, #{money})")
+    @Insert("INSERT INTO `order` (`id`,`user_id`,`commodity_code`,`count`,`money`) VALUES(NULL, #{userId}, #{commodityCode}, #{count}, #{money})")
     Long create(Order order);
 }

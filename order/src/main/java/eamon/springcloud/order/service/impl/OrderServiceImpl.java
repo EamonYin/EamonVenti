@@ -47,10 +47,11 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
 
     @Override
 //    @Transactional
-    @GlobalTransactional
+    @GlobalTransactional(name = "order",rollbackFor = Exception.class)
     public Long create(Order order) {
         // 创建订单
-        orderMapper.insert(order);
+        orderMapper.create(order);
+//        orderMapper.insert(order);
         try {
             // 扣库存
             storageClient.deduct(order.getCommodityCode(), order.getCount());

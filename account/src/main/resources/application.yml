@@ -25,3 +25,5 @@ mybatis-plus:
       insert-strategy: not_null
       update-strategy: not_null
       id-type: auto
+  mapper-locations: classpath:mapper/xml/*.xml
+  type-aliases-package: eamon.springcloud.account.entity

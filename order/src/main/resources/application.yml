@@ -19,8 +19,12 @@ spring:
         #tx-service-group: order-service-fescar-service-group
         tx-service-group: my_test_tx_group
 mybatis-plus:
+#  mapper-locations: classpath*:eamon/springcloud/order/mapper/xml/*.xml
+  mapper-locations: classpath*:eamon/springcloud/order/mapper/xml/*.xml
+  type-aliases-package: eamon.springcloud.order.entity
   global-config:
     db-config:
       insert-strategy: not_null
       update-strategy: not_null
       id-type: auto
+
