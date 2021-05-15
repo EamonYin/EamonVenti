@@ -7,6 +7,7 @@ import eamon.springcloud.order.mapper.OrderMapper;
 import eamon.springcloud.order.service.OrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import feign.FeignException;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -45,7 +46,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     }*/
 
     @Override
-    @Transactional
+//    @Transactional
+    @GlobalTransactional
     public Long create(Order order) {
         // 创建订单
         orderMapper.insert(order);

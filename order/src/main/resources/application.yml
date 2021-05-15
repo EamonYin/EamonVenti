@@ -11,10 +11,13 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.217.128:8848
+        server-addr: 192.168.217.129:8848
     alibaba:
       seata:
-        tx-service-group: order-service-fescar-service-group
+        enabled: true
+        application-id: ${spring.application.name}
+        #tx-service-group: order-service-fescar-service-group
+        tx-service-group: my_test_tx_group
 mybatis-plus:
   global-config:
     db-config:
