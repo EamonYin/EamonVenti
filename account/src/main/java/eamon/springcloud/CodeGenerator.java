@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 /**
- * @author:eamon
+ * @author:Eamon
  * @create:2021/4/22,20:53
  * @version:1.0
  *
